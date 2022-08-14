@@ -24,11 +24,6 @@ a {
     text-decoration: none;
 }
 
-/* body,
-html {
-    overflow-x: hidden;
-} */
-
 body {
     background-color: var(--text-color);
 }
@@ -167,7 +162,7 @@ nav {
     left: 0;
     position: relative;
     top: 0;
-    width: 100%;
+    width: 140%;
     z-index: 9999;
 }
 
@@ -250,11 +245,11 @@ nav input:checked~#overlay {
     background: #e5e5e5;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    height: 150vh;
     position: fixed;
     right: 0;
     top: 0;
-    width: 100vw;
+    width: 150vw;
     z-index: -1;
 }
 
@@ -292,4 +287,172 @@ nav ul a:hover {
 .social__nav {
     display: flex;
     justify-content: space-evenly;
+}
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+}
+
+.hero__title {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero__title {
+        font-size: 51px;
+        margin-bottom: 43px;
+        width: 484px;
+    }
+}
+
+.hero__tex {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--primary-white-color);
+    margin-bottom: 50px;
+    width: 250px;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero__tex {
+        font-size: 16px;
+        margin-bottom: 115px;
+        width: 340px;
+    }
+}
+
+.hero__button {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    width: 125px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero__button {
+        font-size: 16px;
+        height: 60px;
+        width: 205px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .hero__container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.hero_img {
+    width: 430px;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero_img {
+        width: 870px;
+        height: 653px;
+    }   
+}
+
+.collection__title {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 1400px) {
+    .collection__title {
+        font-size: 38px;
+    }
+}
+
+.collection__title_part {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #A8A8A8;
+    margin-bottom: 21px;
+}
+
+@media screen and (min-width: 1400px) {
+    .collection__title_part {
+        font-size: 38px;
+        margin-bottom: 41px;
+    }
+}
+
+.collection__tex {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.5;
+    color: var(--accent-color);
+    margin-bottom: 32px;
+    border-left: 2px solid #8DFD1B;
+    padding-left: 20px;
+}
+
+.collection__tex_description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary-white-color);
+    margin-bottom: 18px;
+}
+
+.collection__button {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-white-color);
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    background-color: transparent;
+    border: 1px solid #8DFD1B;
+}
+
+@media screen and (max-width: 768px) {
+    .collection__img {
+        margin-bottom: 30px;
+    }
+}
+
+.collection {
+    padding-bottom: 60px;
 }
