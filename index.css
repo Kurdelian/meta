@@ -406,6 +406,7 @@ nav ul a:hover {
     line-height: 1.2;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    margin-bottom: 61px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -421,14 +422,13 @@ nav ul a:hover {
     line-height: 1.2;
     text-transform: uppercase;
     color: #A8A8A8;
-    margin-bottom: 21px;
     width: 200px;
+    margin-bottom: 61px;
 }
 
 @media screen and (min-width: 1200px) {
     .collection__title_part {
         font-size: 38px;
-        margin-bottom: 41px;
         width: 351px;
     }
 }
@@ -663,7 +663,6 @@ nav ul a:hover {
     align-items: center;
 }
 
-
 .story__img {
     width: 172px;
     height: 253px;
@@ -678,7 +677,7 @@ nav ul a:hover {
     line-height: 1;
     color: var(--primary-white-color);
     padding: 25px;
-    width: 270px;
+    width: 282px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -692,7 +691,6 @@ nav ul a:hover {
 
 .story__item:hover {
     background: #222222;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--accent-color);
 }
 
@@ -714,17 +712,30 @@ nav ul a:hover {
 
 .story__box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .story__box_part {
     opacity:0;
+    padding: 25px;
 }
-/* 
-.activ {
-    opacity: 1;
-} */
 
+.story_case {
+    background: #222222;
+}
+
+@media screen and (min-width: 1200px) {
+    .story_case {
+        display: flex;
+    }
+}
+
+.story_up {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .story__box {
+        display: none;
+    }
+}
 
