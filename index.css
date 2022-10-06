@@ -406,7 +406,6 @@ nav ul a:hover {
     line-height: 1.2;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    margin-bottom: 61px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -533,14 +532,13 @@ nav ul a:hover {
 }
 
 .artists {
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
 
 @media screen and (min-width: 768px) {
     .artists {
         padding-left: 30px;
         padding-right: 30px;
-        padding-bottom: 200px;
         position: relative;
 }   
 }
@@ -643,14 +641,24 @@ nav ul a:hover {
 }
 
 .story {
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .story {
-        padding-left: 40px;
-        padding-right: 240px;
+            padding-bottom: 120px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .story {
+        padding-left: 15px;
     }
+}
+
+.srory__title_one {
+    text-align: center;
+    margin-bottom: 61px;
 }
 
 .story__title {
@@ -663,11 +671,22 @@ nav ul a:hover {
     align-items: center;
 }
 
+@media screen and (min-width: 769px) {
+    .story__container {
+        display: none;
+    }
+}
+
 .story__img {
     width: 172px;
-    height: 253px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    height: 253px; 
+    margin: auto;
+}
+
+.story__picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .story__item {
@@ -682,11 +701,8 @@ nav ul a:hover {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .story__item {
-        width: 350px;
-        padding: 15px;
-    } 
+.story__item:last-child {
+    margin-bottom: 0px;
 }
 
 .story__item:hover {
@@ -694,21 +710,9 @@ nav ul a:hover {
     color: var(--accent-color);
 }
 
-.story__picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .accordion__item:not(.accordion__item_show) .accordion__body {
     display: none;
   }
-
-@media screen and (min-width: 768px) {
-    .accordion {
-        display: none;
-    }  
-}
 
 .story__box {
     display: flex;
@@ -719,8 +723,13 @@ nav ul a:hover {
     padding: 25px;
 }
 
+.story__zero {
+    opacity: 1;
+}
+
 .story_case {
     background: #222222;
+    width: 876px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -733,9 +742,204 @@ nav ul a:hover {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .story__box {
         display: none;
     }
 }
 
+.background_img {
+    position: absolute;
+    left: 0%;
+    right: -3%;
+}
+
+.background {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+.background {
+        padding-bottom: 118px;
+    }
+}
+
+.roadmap {
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+.roadmap {
+        padding-top: 118px;
+        /* background-image: url(./image/rundone.png);
+        background-size: contain;
+        background-repeat: no-repeat; */
+    }
+}
+
+.roadmap__title {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 61px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__title {
+        font-size: 38px;
+    }
+}
+
+.roadmap__number {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1,02;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap__number_transparent {
+    background-color: var(--text-color);
+    border: 2px solid #8DFD1B;
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__number {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+    }
+}
+
+.roadmap__tex {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding-bottom: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__tex {
+        font-size: 11px;
+    }
+}
+
+.roadmap__tex_part {
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.73;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__tex_part {
+        font-size: 16px;
+    }
+}
+
+.roadmap__description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 2.33;
+    color: var(--primary-white-color);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__description {
+        font-size: 11px;
+        padding-left: 35px;
+    }
+}
+
+.roadmap__fontsize {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__fontsize {
+        font-size: 12px;
+    }
+}
+
+.roadmap__padding {
+    padding-left: 0px;
+}
+
+.roadmap__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #8DFD1B;
+    padding: 17px;
+}
+
+.roadmap__img {
+    width: 129px;
+    height: 129px;
+    position: absolute;
+    left: 30%;
+    border-radius: 8px;
+}
+
+.roadmap__bottom {
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__bottom {
+        margin-bottom: 0px;
+    }
+}
+
+.roadmap__tumb {
+    height: 350px;
+    border: 2px solid #8DFD1B;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__tumb {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.roadmap__item {
+    margin-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__item {
+        margin-bottom: 140px;
+    }
+}
+
+.roadmap__center {
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 50px;
+}

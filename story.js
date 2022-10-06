@@ -15,41 +15,23 @@ founders.onmouseover = function(event) {
   const founders = event.founders;
   storyBoxPart.style.opacity = '1';
   storyBoxPart.classList.remove('story_up')
-  };
-
-founders.onmouseout = function(event) {
-  const founders = event.founders;
-  storyBoxPart.style.opacity = '0';
-  storyBoxPart.classList.add('story_up')
+  storyBoxPartOne.classList.add('story_up')
+  storyBoxPartTwo.classList.add('story_up')
   };
 
 partners.onmouseover = function (event) {
   const partners = event.partners;
   storyBoxPartOne.style.opacity = '1';
   storyBoxPartOne.classList.remove('story_up')
+  storyBoxPart.classList.add('story_up')
+  storyBoxPartTwo.classList.add('story_up')
   };
-
-partners.onmouseout = function(event) {
-  const partners = event.partners;
-  storyBoxPartOne.style.opacity = '0';
-  storyBoxPartOne.classList.add('story_up')
-};
 
 futures.onmouseover = function (event) {
   const futures = event.futures;
   storyBoxPartTwo.style.opacity = '1';
   storyBoxPartTwo.classList.remove('story_up')
+  storyBoxPartOne.classList.add('story_up')
   };
 
-futures.onmouseout = function(event) {
-  const futures = event.futures;
-  storyBoxPartTwo.style.opacity = '0';
-  storyBoxPartTwo.classList.add('story_up')
-};
 
-  
-// founders.addEventListener('click', getFounders ())
-
-// function getFounders () {
-//     storyBoxPart.classList.add('activ')
-// }
