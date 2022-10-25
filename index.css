@@ -729,12 +729,13 @@ nav ul a:hover {
 
 .story_case {
     background: #222222;
-    width: 876px;
+    width: 400px;
 }
 
 @media screen and (min-width: 1200px) {
     .story_case {
         display: flex;
+        width: 876px;
     }
 }
 
@@ -755,7 +756,7 @@ nav ul a:hover {
 }
 
 .background {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 @media screen and (min-width: 768px) {
@@ -765,15 +766,17 @@ nav ul a:hover {
 }
 
 .roadmap {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 @media screen and (min-width: 768px) {
 .roadmap {
-        padding-top: 118px;
-        /* background-image: url(./image/rundone.png);
+        padding-top: 218px;
+        background-image: url(./image/rundone.png);
         background-size: contain;
-        background-repeat: no-repeat; */
+        width: 672px;
+        height: 672px;
+        background-repeat: space;
     }
 }
 
@@ -806,6 +809,7 @@ nav ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 12px;
 }
 
 .roadmap__number_transparent {
@@ -889,7 +893,6 @@ nav ul a:hover {
 
 .roadmap__box {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: 2px solid #8DFD1B;
     padding: 17px;
@@ -901,6 +904,13 @@ nav ul a:hover {
     position: absolute;
     left: 30%;
     border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .roadmap__img {
+        position: relative;
+        left: auto;
+    }
 }
 
 .roadmap__bottom {
@@ -918,21 +928,30 @@ nav ul a:hover {
     border: 2px solid #8DFD1B;
     padding-right: 10px;
     padding-left: 10px;
+    position: relative;
 }
 
 @media screen and (min-width: 768px) {
     .roadmap__tumb {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+        justify-content: space-around;
+        height: 271px;
     }
 }
 
 .roadmap__item {
     margin-bottom: 70px;
+    background-color: #222222;
 }
 
 @media screen and (min-width: 768px) {
+    .roadmap__item {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .roadmap__item {
         margin-bottom: 140px;
     }
@@ -942,4 +961,11 @@ nav ul a:hover {
     text-align: center;
     font-size: 11px;
     margin-bottom: 50px;
+}
+
+.roadmap__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
