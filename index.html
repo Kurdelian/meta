@@ -334,7 +334,7 @@
             <h8 class="question__title question__title_part">asked</h8>
             <h9 class="question__title">questions</h9>
             <picture>
-                <source srcset="./image/playred 1x, ./images/playred-2x.jpg 2x" media="(min-width: 1500px)" />
+                <source srcset="./image/playred 1x, ./images/playred-2x.jpg 2x" media="(min-width: 1600px)" />
                 <img src="./image/playred.jpg" alt="playred" class="questions__img">
             </picture>
         </div>
@@ -369,46 +369,121 @@
         </div>
         </div>
     </section>
-    <section>
+    <section class="team">
         <div class="container">
-            <h10 class="artists__title">team</h10>
-            <ul>
-                <li>
+            <h10 class="team__title">team</h10>
+            <ul class="team__list_basic">
+                <li class="team__item_basic">
                     <picture>
                         <source srcset="./image/shakylake 1x, ./images/shakylake-2x.jpg 2x" media="(min-width: 1500px)" />
-                        <img src="./image/shakylake.jpg" alt="shakylake">
+                        <img src="./image/shakylake.jpg" alt="shakylake" class="team__img">
                     </picture>
                     <div>
                         <p class="team__name">Shaky Lake</p>
-                        <p class="roadmap__tex">Founder</p>
-                        <ul>
+                        <p class="roadmap__tex team__tex">Founder</p>
+                        <ul class="team__list">
                             <li class="team__item">
                                 <a href="https://twitter.com/login">
-                                    <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 0h20v20H0V0z" fill="url(#a)" /><defs><pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#b" transform="scale(.01667)" /></pattern><image id="b" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPuSURBVHgB7ZpZqE5tGIbvfx78U///m2WIyFSUIhSJksKBRIooIaWcIdOBAwdEcSBzkjIeGMocMmeeZSpzyJB5Xu67Z+3str2/713Tt5asq67sdsv69vOOz/u8H5CTk5OTk5OTFt8he3xP/6f16B/+757TG/Qh9RCBrAVcn46gbfyfq8H+xmewgE/R+fSmw7v+pY8QkDooDU3oGlhPekVU8Kto4wrvUMPUpSPpNtoCAfmTTqftkSzt6EYUD7SiG/z/+xNtSqfSLbBGOwSbGoHoRe/Qa3QAkqEVvYvgwZb52Lf8787SjgjBBPrRf8lF2hLxUpMuRfhgK/M9HUR/9j/jBwRgU4WXaaEYgxBDpQom0zeIL1j17HDY3O1N58DmszOHKnnpPTqQ/o5oaIE5g/iC1UjcQ1fSw/QBXQ9b6Z05jqqHzS7YEA/b250Q71Au7we6j/6FgOwu8uIDsD0zzF4+GskFrJ7ugBDMcvyAXXQoLDtyZS4QW4BlvoTt5YF7toyh9IXjhz2BJQOD6Y8O714ExBJkeTfDEo/QNKTbQ3zwbboatncrRaysxWcjfGBVuRwOjV3oAeWu62h3BEPpaH/ak16lV2DJyxHY6nmdPkX8fPCNhBYkBa2V2cu4c+FAoW3lH/9F0+h+ZJ9nLg8VClgnDiXoync1587BGiCrXHV5qNAcVvaiFK0HLMEPlJemwG2Xhwr18F7/319pI1ialsUKiVDnnHR5sFDAJ+A4LzLAfd+iFAp4B2wf/hrYCevlohQKWC22DNleqIS2zKOIkRlwTzHTUIW9toiR2nQhAC+jKqWshpjR6jyOXgLgZcxQR0EXtD11hqWajwB4GVA5+i8IgGsyoaLYKFjpVhnNedocn28G0kDryhRYSSd2tJprY9dpJAs9K7UVNUCC6Mj3AICXAd/SLkgYnZ7mAfAy4FbYjUPiaIFQvfotAC8lVTxsjRLSjK5AOsFqDemHlE5uw2Bn5tcoTbA6yExERKK01GlYDVjJiM6iZWfrpLaqxXQmrBybOmo4reKaX3H3rAJcggwVIGrRsfQWkhnK2hki1ZvjQJmX7ocm4cv72bhUWWk8UkQHiBqwGwm1+mX6DskEq1tKTZGot5SVBlGRrrQbbPHR5v4f7PJa1cvqSLaupUOJGnMB7CKgJOiA0IceQ2kL8NrihiCBXnVFvasvtCjJuIL4A1QSoWsXFRf6okS4DE/1uC7F9CWXrrBGiDKs9TUHzf+1sIvrgyjh3hrmD9dlmRpAxYAGsG3pb3ye83qnpsIrWM6tb8/plHUBFqgqoU+QElEXoN9gC5muRDUSygesXlPAWoge+j/n5OTk5OTkfMN8AutJnFt5N68PAAAAAElFTkSuQmCC" /></defs></svg>
+                                    <svg class="team__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 0h20v20H0V0z" fill="url(#a)" /><defs><pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#b" transform="scale(.01667)" /></pattern><image id="b" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPuSURBVHgB7ZpZqE5tGIbvfx78U///m2WIyFSUIhSJksKBRIooIaWcIdOBAwdEcSBzkjIeGMocMmeeZSpzyJB5Xu67Z+3str2/713Tt5asq67sdsv69vOOz/u8H5CTk5OTk5OTFt8he3xP/6f16B/+757TG/Qh9RCBrAVcn46gbfyfq8H+xmewgE/R+fSmw7v+pY8QkDooDU3oGlhPekVU8Kto4wrvUMPUpSPpNtoCAfmTTqftkSzt6EYUD7SiG/z/+xNtSqfSLbBGOwSbGoHoRe/Qa3QAkqEVvYvgwZb52Lf8787SjgjBBPrRf8lF2hLxUpMuRfhgK/M9HUR/9j/jBwRgU4WXaaEYgxBDpQom0zeIL1j17HDY3O1N58DmszOHKnnpPTqQ/o5oaIE5g/iC1UjcQ1fSw/QBXQ9b6Z05jqqHzS7YEA/b250Q71Au7we6j/6FgOwu8uIDsD0zzF4+GskFrJ7ugBDMcvyAXXQoLDtyZS4QW4BlvoTt5YF7toyh9IXjhz2BJQOD6Y8O714ExBJkeTfDEo/QNKTbQ3zwbboatncrRaysxWcjfGBVuRwOjV3oAeWu62h3BEPpaH/ak16lV2DJyxHY6nmdPkX8fPCNhBYkBa2V2cu4c+FAoW3lH/9F0+h+ZJ9nLg8VClgnDiXoync1587BGiCrXHV5qNAcVvaiFK0HLMEPlJemwG2Xhwr18F7/319pI1ialsUKiVDnnHR5sFDAJ+A4LzLAfd+iFAp4B2wf/hrYCevlohQKWC22DNleqIS2zKOIkRlwTzHTUIW9toiR2nQhAC+jKqWshpjR6jyOXgLgZcxQR0EXtD11hqWajwB4GVA5+i8IgGsyoaLYKFjpVhnNedocn28G0kDryhRYSSd2tJprY9dpJAs9K7UVNUCC6Mj3AICXAd/SLkgYnZ7mAfAy4FbYjUPiaIFQvfotAC8lVTxsjRLSjK5AOsFqDemHlE5uw2Bn5tcoTbA6yExERKK01GlYDVjJiM6iZWfrpLaqxXQmrBybOmo4reKaX3H3rAJcggwVIGrRsfQWkhnK2hki1ZvjQJmX7ocm4cv72bhUWWk8UkQHiBqwGwm1+mX6DskEq1tKTZGot5SVBlGRrrQbbPHR5v4f7PJa1cvqSLaupUOJGnMB7CKgJOiA0IceQ2kL8NrihiCBXnVFvasvtCjJuIL4A1QSoWsXFRf6okS4DE/1uC7F9CWXrrBGiDKs9TUHzf+1sIvrgyjh3hrmD9dlmRpAxYAGsG3pb3ye83qnpsIrWM6tb8/plHUBFqgqoU+QElEXoN9gC5muRDUSygesXlPAWoge+j/n5OTk5OTkfMN8AutJnFt5N68PAAAAAElFTkSuQmCC" /></defs></svg>
                                 </a>
                             </li>
                             <li class="team__item">
                                 <a href="https://www.instagram.com/">
-<svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <path d="M0 0h20v20H0V0z" fill="url(#a)" />
-    <defs>
-        <pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#b" transform="matrix(.01667 0 0 .01667 0 -.008)" />
-        </pattern>
-        <image id="b" width="60" height="61"
-            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA9CAYAAADxoArXAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZnJaxRBFMY/F9SoiLhEEdwv6kEEERQinvQP8JCz4tGjePC/8CCePHjwoKAiKIKgePIgKAkJ2UhCEgjZCAnZ9+V71ASSTPX060mYVBfvBz8Set708E1XV72uAQzDMAwjGHYhG8foA1pD52gD/UBnESF36T+6sskmeg+RcYWO0GUUBxbb6S1EwgH6Gv6ga8oX8RKRcJHWoXRgsRc5YLeiZh89qKg7jhygCTwBd/+m0Y0coAk8QH+k1CzQd4iIw/QnXYR/wvpMTyEyZPL6QpewMfB7eh05IWunJbfAZXoH7mrL7N0CwwiGrEN6JzhPL9GjcF3fPJ2iQ7STjmU4lyrwBfqcnlTU1iYc/4Z0XtDGwv9H6EP6mF6Da36q6B64VUEmzhm44H/o28LfcWwD8oFdSG8tV0qcQ/PemkLtObjVYFz5PlGao1fQXZRUKhn4Pu1Q1vv8S08jJ4Gf0HplbSk/Yot9faUCN8PfyWVVdmKS5hJVL10prsJNSltFJrhHdL/vxZACbyc3ChYRcmAZ3v20DRnXWlINN2KKCDFwH30G17OfgdtPO0Fv099w63AacmvcRJlUatISW+GCJTVE8gj6S3mu774ThHaFP8GtpUlf3iB9A91VPus7GFLgUfoVpUeK8B9uxKVR7TsYUmDZ29bsfA5Dt3/m3XgMKbAMV03zP6Osq/IdDCnwJJ1W1MmT0oKiztvEhBRY1t0lZd08yiSkwGmT1fo6zSztJdbWMhELHDsWOHYscOxY4NixwLFjgWNnr6Kmhz6lh1A+tYqaduiQpyX54Uzzi6RhGIZhGMbOsQoffCMvN33ZUQAAAABJRU5ErkJggg==" />
-    </defs>
-</svg>
+                                    <svg class="team__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)" /><defs> <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"> <use xlink:href="#image0_1_775" transform="translate(0 -0.00833333) scale(0.0166667)" /> </pattern> <image id="image0_1_775" width="60" height="61" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA9CAYAAADxoArXAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZnJaxRBFMY/F9SoiLhEEdwv6kEEERQinvQP8JCz4tGjePC/8CCePHjwoKAiKIKgePIgKAkJ2UhCEgjZCAnZ9+V71ASSTPX060mYVBfvBz8Set708E1XV72uAQzDMAwjGHYhG8foA1pD52gD/UBnESF36T+6sskmeg+RcYWO0GUUBxbb6S1EwgH6Gv6ga8oX8RKRcJHWoXRgsRc5YLeiZh89qKg7jhygCTwBd/+m0Y0coAk8QH+k1CzQd4iIw/QnXYR/wvpMTyEyZPL6QpewMfB7eh05IWunJbfAZXoH7mrL7N0CwwiGrEN6JzhPL9GjcF3fPJ2iQ7STjmU4lyrwBfqcnlTU1iYc/4Z0XtDGwv9H6EP6mF6Da36q6B64VUEmzhm44H/o28LfcWwD8oFdSG8tV0qcQ/PemkLtObjVYFz5PlGao1fQXZRUKhn4Pu1Q1vv8S08jJ4Gf0HplbSk/Yot9faUCN8PfyWVVdmKS5hJVL10prsJNSltFJrhHdL/vxZACbyc3ChYRcmAZ3v20DRnXWlINN2KKCDFwH30G17OfgdtPO0Fv099w63AacmvcRJlUatISW+GCJTVE8gj6S3mu774ThHaFP8GtpUlf3iB9A91VPus7GFLgUfoVpUeK8B9uxKVR7TsYUmDZ29bsfA5Dt3/m3XgMKbAMV03zP6Osq/IdDCnwJJ1W1MmT0oKiztvEhBRY1t0lZd08yiSkwGmT1fo6zSztJdbWMhELHDsWOHYscOxY4NixwLFjgWNnr6Kmhz6lh1A+tYqaduiQpyX54Uzzi6RhGIZhGMbOsQoffCMvN33ZUQAAAABJRU5ErkJggg==" /></defs></svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <p class="questions__tex">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="questions__tex team__tex_part">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </li>
+                <li class="team__item_basic">
+                    <picture>
+                        <source srcset="./image/bakyhike 1x, ./images/bakyhike-2x.jpg 2x" media="(min-width: 1500px)" />
+                        <img src="./image/bakyhike.jpg" alt="bakyhike" class="team__img">
+                    </picture>
+                    <div>
+                        <p class="team__name">Baky Hike</p>
+                        <p class="roadmap__tex team__tex">Co-founder</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a href="https://twitter.com/login">
+                                    <svg class="team__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M0 0h20v20H0V0z" fill="url(#a)" /><defs> <pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1"> <use xlink:href="#b" transform="scale(.01667)" /> </pattern> <image id="b" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPuSURBVHgB7ZpZqE5tGIbvfx78U///m2WIyFSUIhSJksKBRIooIaWcIdOBAwdEcSBzkjIeGMocMmeeZSpzyJB5Xu67Z+3str2/713Tt5asq67sdsv69vOOz/u8H5CTk5OTk5OTFt8he3xP/6f16B/+757TG/Qh9RCBrAVcn46gbfyfq8H+xmewgE/R+fSmw7v+pY8QkDooDU3oGlhPekVU8Kto4wrvUMPUpSPpNtoCAfmTTqftkSzt6EYUD7SiG/z/+xNtSqfSLbBGOwSbGoHoRe/Qa3QAkqEVvYvgwZb52Lf8787SjgjBBPrRf8lF2hLxUpMuRfhgK/M9HUR/9j/jBwRgU4WXaaEYgxBDpQom0zeIL1j17HDY3O1N58DmszOHKnnpPTqQ/o5oaIE5g/iC1UjcQ1fSw/QBXQ9b6Z05jqqHzS7YEA/b250Q71Au7we6j/6FgOwu8uIDsD0zzF4+GskFrJ7ugBDMcvyAXXQoLDtyZS4QW4BlvoTt5YF7toyh9IXjhz2BJQOD6Y8O714ExBJkeTfDEo/QNKTbQ3zwbboatncrRaysxWcjfGBVuRwOjV3oAeWu62h3BEPpaH/ak16lV2DJyxHY6nmdPkX8fPCNhBYkBa2V2cu4c+FAoW3lH/9F0+h+ZJ9nLg8VClgnDiXoync1587BGiCrXHV5qNAcVvaiFK0HLMEPlJemwG2Xhwr18F7/319pI1ialsUKiVDnnHR5sFDAJ+A4LzLAfd+iFAp4B2wf/hrYCevlohQKWC22DNleqIS2zKOIkRlwTzHTUIW9toiR2nQhAC+jKqWshpjR6jyOXgLgZcxQR0EXtD11hqWajwB4GVA5+i8IgGsyoaLYKFjpVhnNedocn28G0kDryhRYSSd2tJprY9dpJAs9K7UVNUCC6Mj3AICXAd/SLkgYnZ7mAfAy4FbYjUPiaIFQvfotAC8lVTxsjRLSjK5AOsFqDemHlE5uw2Bn5tcoTbA6yExERKK01GlYDVjJiM6iZWfrpLaqxXQmrBybOmo4reKaX3H3rAJcggwVIGrRsfQWkhnK2hki1ZvjQJmX7ocm4cv72bhUWWk8UkQHiBqwGwm1+mX6DskEq1tKTZGot5SVBlGRrrQbbPHR5v4f7PJa1cvqSLaupUOJGnMB7CKgJOiA0IceQ2kL8NrihiCBXnVFvasvtCjJuIL4A1QSoWsXFRf6okS4DE/1uC7F9CWXrrBGiDKs9TUHzf+1sIvrgyjh3hrmD9dlmRpAxYAGsG3pb3ye83qnpsIrWM6tb8/plHUBFqgqoU+QElEXoN9gC5muRDUSygesXlPAWoge+j/n5OTk5OTkfMN8AutJnFt5N68PAAAAAElFTkSuQmCC" /> </defs></svg>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="https://www.instagram.com/"> 
+                                    <svg class="team__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)" /><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_1_775" transform="translate(0 -0.00833333) scale(0.0166667)" /></pattern> <image id="image0_1_775" width="60" height="61" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA9CAYAAADxoArXAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZnJaxRBFMY/F9SoiLhEEdwv6kEEERQinvQP8JCz4tGjePC/8CCePHjwoKAiKIKgePIgKAkJ2UhCEgjZCAnZ9+V71ASSTPX060mYVBfvBz8Set708E1XV72uAQzDMAwjGHYhG8foA1pD52gD/UBnESF36T+6sskmeg+RcYWO0GUUBxbb6S1EwgH6Gv6ga8oX8RKRcJHWoXRgsRc5YLeiZh89qKg7jhygCTwBd/+m0Y0coAk8QH+k1CzQd4iIw/QnXYR/wvpMTyEyZPL6QpewMfB7eh05IWunJbfAZXoH7mrL7N0CwwiGrEN6JzhPL9GjcF3fPJ2iQ7STjmU4lyrwBfqcnlTU1iYc/4Z0XtDGwv9H6EP6mF6Da36q6B64VUEmzhm44H/o28LfcWwD8oFdSG8tV0qcQ/PemkLtObjVYFz5PlGao1fQXZRUKhn4Pu1Q1vv8S08jJ4Gf0HplbSk/Yot9faUCN8PfyWVVdmKS5hJVL10prsJNSltFJrhHdL/vxZACbyc3ChYRcmAZ3v20DRnXWlINN2KKCDFwH30G17OfgdtPO0Fv099w63AacmvcRJlUatISW+GCJTVE8gj6S3mu774ThHaFP8GtpUlf3iB9A91VPus7GFLgUfoVpUeK8B9uxKVR7TsYUmDZ29bsfA5Dt3/m3XgMKbAMV03zP6Osq/IdDCnwJJ1W1MmT0oKiztvEhBRY1t0lZd08yiSkwGmT1fo6zSztJdbWMhELHDsWOHYscOxY4NixwLFjgWNnr6Kmhz6lh1A+tYqaduiQpyX54Uzzi6RhGIZhGMbOsQoffCMvN33ZUQAAAABJRU5ErkJggg==" /></defs></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="questions__tex team__tex_part">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </li>
+                <li class="team__item_basic">
+                    <picture>
+                        <source srcset="./image/vaniado 1x, ./images/vaniado-2x.jpg 2x" media="(min-width: 1500px)" />
+                        <img src="./image/vaniado.jpg" alt="vaniado" class="team__img">
+                    </picture>
+                    <div>
+                        <p class="team__name">Vania Do</p>
+                        <p class="roadmap__tex team__tex">Producer</p>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a href="https://twitter.com/login">
+                                    <svg class="team__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M0 0h20v20H0V0z" fill="url(#a)" /> <defs> <pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1"> <use xlink:href="#b" transform="scale(.01667)" /> </pattern> <image id="b" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPuSURBVHgB7ZpZqE5tGIbvfx78U///m2WIyFSUIhSJksKBRIooIaWcIdOBAwdEcSBzkjIeGMocMmeeZSpzyJB5Xu67Z+3str2/713Tt5asq67sdsv69vOOz/u8H5CTk5OTk5OTFt8he3xP/6f16B/+757TG/Qh9RCBrAVcn46gbfyfq8H+xmewgE/R+fSmw7v+pY8QkDooDU3oGlhPekVU8Kto4wrvUMPUpSPpNtoCAfmTTqftkSzt6EYUD7SiG/z/+xNtSqfSLbBGOwSbGoHoRe/Qa3QAkqEVvYvgwZb52Lf8787SjgjBBPrRf8lF2hLxUpMuRfhgK/M9HUR/9j/jBwRgU4WXaaEYgxBDpQom0zeIL1j17HDY3O1N58DmszOHKnnpPTqQ/o5oaIE5g/iC1UjcQ1fSw/QBXQ9b6Z05jqqHzS7YEA/b250Q71Au7we6j/6FgOwu8uIDsD0zzF4+GskFrJ7ugBDMcvyAXXQoLDtyZS4QW4BlvoTt5YF7toyh9IXjhz2BJQOD6Y8O714ExBJkeTfDEo/QNKTbQ3zwbboatncrRaysxWcjfGBVuRwOjV3oAeWu62h3BEPpaH/ak16lV2DJyxHY6nmdPkX8fPCNhBYkBa2V2cu4c+FAoW3lH/9F0+h+ZJ9nLg8VClgnDiXoync1587BGiCrXHV5qNAcVvaiFK0HLMEPlJemwG2Xhwr18F7/319pI1ialsUKiVDnnHR5sFDAJ+A4LzLAfd+iFAp4B2wf/hrYCevlohQKWC22DNleqIS2zKOIkRlwTzHTUIW9toiR2nQhAC+jKqWshpjR6jyOXgLgZcxQR0EXtD11hqWajwB4GVA5+i8IgGsyoaLYKFjpVhnNedocn28G0kDryhRYSSd2tJprY9dpJAs9K7UVNUCC6Mj3AICXAd/SLkgYnZ7mAfAy4FbYjUPiaIFQvfotAC8lVTxsjRLSjK5AOsFqDemHlE5uw2Bn5tcoTbA6yExERKK01GlYDVjJiM6iZWfrpLaqxXQmrBybOmo4reKaX3H3rAJcggwVIGrRsfQWkhnK2hki1ZvjQJmX7ocm4cv72bhUWWk8UkQHiBqwGwm1+mX6DskEq1tKTZGot5SVBlGRrrQbbPHR5v4f7PJa1cvqSLaupUOJGnMB7CKgJOiA0IceQ2kL8NrihiCBXnVFvasvtCjJuIL4A1QSoWsXFRf6okS4DE/1uC7F9CWXrrBGiDKs9TUHzf+1sIvrgyjh3hrmD9dlmRpAxYAGsG3pb3ye83qnpsIrWM6tb8/plHUBFqgqoU+QElEXoN9gC5muRDUSygesXlPAWoge+j/n5OTk5OTkfMN8AutJnFt5N68PAAAAAElFTkSuQmCC" /></defs></svg>
+                                </a>
+                            </li>
+                            <li class="team__item">
+                                <a href="https://www.instagram.com/">
+                                    <svg class="team__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <path d="M0 0H20V20H0V0Z" fill="url(#pattern0)" /><defs> <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"> <use xlink:href="#image0_1_775" transform="translate(0 -0.00833333) scale(0.0166667)" /></pattern><image id="image0_1_775" width="60" height="61" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA9CAYAAADxoArXAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgB7ZnJaxRBFMY/F9SoiLhEEdwv6kEEERQinvQP8JCz4tGjePC/8CCePHjwoKAiKIKgePIgKAkJ2UhCEgjZCAnZ9+V71ASSTPX060mYVBfvBz8Set708E1XV72uAQzDMAwjGHYhG8foA1pD52gD/UBnESF36T+6sskmeg+RcYWO0GUUBxbb6S1EwgH6Gv6ga8oX8RKRcJHWoXRgsRc5YLeiZh89qKg7jhygCTwBd/+m0Y0coAk8QH+k1CzQd4iIw/QnXYR/wvpMTyEyZPL6QpewMfB7eh05IWunJbfAZXoH7mrL7N0CwwiGrEN6JzhPL9GjcF3fPJ2iQ7STjmU4lyrwBfqcnlTU1iYc/4Z0XtDGwv9H6EP6mF6Da36q6B64VUEmzhm44H/o28LfcWwD8oFdSG8tV0qcQ/PemkLtObjVYFz5PlGao1fQXZRUKhn4Pu1Q1vv8S08jJ4Gf0HplbSk/Yot9faUCN8PfyWVVdmKS5hJVL10prsJNSltFJrhHdL/vxZACbyc3ChYRcmAZ3v20DRnXWlINN2KKCDFwH30G17OfgdtPO0Fv099w63AacmvcRJlUatISW+GCJTVE8gj6S3mu774ThHaFP8GtpUlf3iB9A91VPus7GFLgUfoVpUeK8B9uxKVR7TsYUmDZ29bsfA5Dt3/m3XgMKbAMV03zP6Osq/IdDCnwJJ1W1MmT0oKiztvEhBRY1t0lZd08yiSkwGmT1fo6zSztJdbWMhELHDsWOHYscOxY4NixwLFjgWNnr6Kmhz6lh1A+tYqaduiQpyX54Uzzi6RhGIZhGMbOsQoffCMvN33ZUQAAAABJRU5ErkJggg==" /></defs></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="questions__tex team__tex_part">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                 </li>
             </ul>
         </div>
     </section>
+    <section class="discord">
+        <div class="container discord__container">
+            <div>
+            <h11 class="discord__title">Join our</h11>
+            <h12 class="discord__title discord__title_part">Discord</h12>
+            <p class="collection__tex_description discord__tex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <button type="button" class="discord__button"><img src="./image/emoji.svg" alt="play" class="discord__img">Join Discord</button>
+        </div>
+                <picture>
+                    <source srcset="./image/playviollet 1x, ./images/playviollet-2x.jpg 2x" media="(min-width: 1600px)" />
+                    <img src="./image/playviollet.jpg" alt="playviollet" class="discord__img_basic">
+                </picture>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+        <picture >
+            <source srcset="./image/logo.png 1x, ./image/ogo.png 2x" media="(min-width: 1500px)" />
+            <img src="./image/logo.png" alt="logo" class="footer__logo">
+        </picture>
+        <ul>
+            <li class="footer__item"><a href="#" class="footer__link ">Wave NFTs</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Stories</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Contact</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Licencing</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Style Guide</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Changelog</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Powered by Webflow</a></li>
+            <li class="footer__item"><a href="#" class="footer__link ">Developed by Anastasiia G.</a></li>
+        </ul>
+        <ul class="social__nav">
+            <li class="nav__item_icon"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./image/tvitter.svg" alt="tvitter"></a></li>
+            <li class="nav__item_icon"><a href="https://www.game-game.com.ua"><img src="./image/emoji.svg" alt="play"></a></li>
+            <li class="nav__item_icon"><a href="https://www.youtube.com"><img src="./image/ytub.svg" alt="youtube"></a></li>
+            <li class="nav__item_icon"><a href="https://web.telegram.org/k/"><img src="./image/telegram.svg" alt="telegram"></a></li>
+        </ul>
+    </div>
+</footer>
 
 
 

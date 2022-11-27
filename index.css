@@ -26,6 +26,7 @@ a {
 
 body {
     background-color: var(--text-color);
+    margin: 0;
 }
 
 :root {
@@ -116,7 +117,6 @@ body {
         margin-right: 40px;
 }
 }
-
 
 .nav__item_icon {
     width: 36px;
@@ -238,7 +238,6 @@ nav input[type=checkbox]:checked+label #menu-icon:after {
     transform: rotate(45deg);
 }
 
-
 /*** MENU ***/
 /* Overlay */
 nav input:checked~#overlay {
@@ -292,6 +291,7 @@ nav ul a:hover {
 .hero {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 8px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -383,6 +383,9 @@ nav ul a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.collection {
+    padding-left: 8px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -595,13 +598,21 @@ nav ul a:hover {
     }
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .artists__title::after {
         content: "A";
         position: absolute;
-        right: -20%;
+        right: -14%;
     }
-} */
+}
+
+@media screen and (min-width: 1400px) {
+    .artists__title::after {
+        content: "A";
+        position: absolute;
+        right: -1%;
+    }
+}
 
 .artists__item {
     margin-bottom: 30px;
@@ -628,7 +639,7 @@ nav ul a:hover {
 
 @media screen and (min-width: 1200px) {
     .artists__item {
-        width: calc((100% - 60px) / 4);
+        width: calc((100% - 10px) / 4);
     }
 }
 
@@ -764,7 +775,7 @@ nav ul a:hover {
 .background_img {
     position: absolute;
     left: 0%;
-    right: -3%;
+    right: -15%;
 }
 
 .background {
@@ -783,6 +794,12 @@ nav ul a:hover {
 }
 
 @media screen and (min-width: 768px) {
+    .roadmap {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 .roadmap {
         padding-top: 218px;
     }
@@ -803,7 +820,6 @@ nav ul a:hover {
         background-position: right 100% top -4%, right -1% top 35%, right 100% bottom 10%;
         background-repeat: no-repeat;
         background-size: auto;
-
 }
 }
 
@@ -1015,7 +1031,7 @@ nav ul a:hover {
     padding-bottom: 245px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
     .logoholder {
         display: none;
     }
@@ -1044,6 +1060,12 @@ nav ul a:hover {
     padding-bottom: 115px;
 }
 
+@media screen and (min-width: 768px) {
+    .questions {
+        padding-left: 69px;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .questions {
         padding-left: 99px;
@@ -1059,7 +1081,6 @@ nav ul a:hover {
 @media screen and (min-width: 1200px) {
     .questions__box {
         display: flex;
-        justify-content: space-evenly;
     }
 }
 
@@ -1128,11 +1149,16 @@ nav ul a:hover {
     padding: 15px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .questions__list {
         width: 580px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .questions__list {
+        margin-left: 220px;
     }
-    
 }
 
 .questions__item {
@@ -1140,6 +1166,64 @@ nav ul a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-left: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-bottom: 236px;
+        padding-left: 100px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .team {
+        padding-bottom: 236px;
+        padding-left: 139px;
+    }
+}
+
+.team__title {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 1.11;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .team__title {
+        font-size: 79px;
+        justify-content: space-around;
+        padding-right: 600px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__title::before {
+        content: "am";
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__title::after {
+        content: "team";
+        position: absolute;
+        right: 17%;
+    }
 }
 
 .team__name {
@@ -1151,10 +1235,219 @@ nav ul a:hover {
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 18px;
+    margin-top: 18px;
 }
 
 .team__item {
     width: 36px;
     height: 36px;
     background-color: var(--primary-white-color);
+    margin-right: 12px;
+    position: relative;
 }
+
+.team__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.team__img {
+    width: 245px;
+    height: 245px;
+    margin: auto;
+}
+
+.team__tex {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.team__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.team__tex_part {
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .team__tex_part {
+        width: 238px;
+    }
+}
+
+.team__list_basic {
+        margin-top: 124px;
+    }
+
+@media screen and (min-width: 1200px) {
+    .team__list_basic {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .team__item_basic {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team__item_basic {
+        max-width: 250px;
+        margin-right: 100px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .team__item_basic:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .team__item_basic {
+        max-width: 320px;
+    }
+}
+
+.discord {
+    padding-bottom: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+    .discord {
+        padding-bottom: 118px;
+    }
+}
+
+.discord__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .discord__container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.discord__img_basic {
+    width: 284px;
+    height: 284px;
+}
+
+@media screen and (min-width: 1200px) {
+    .discord__img_basic {
+        width: 584px;
+        height: 584px;
+    }
+}
+
+.discord__title {
+    font-family: 'Audiowide';
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .discord__title {
+        font-size: 51px;
+    }
+}
+
+.discord__title_part { 
+    color: var(--accent-color);
+}
+
+.discord__tex {
+    margin-top: 24px;
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+.discord__tex {
+        margin-top: 34px;
+        width: 345px;
+        margin-bottom: 35px;
+    }
+}
+
+.discord__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.discord__button {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .discord__button {
+        margin-bottom: 0px;
+    }
+}
+
+.footer {
+    background-color: #42006A;
+    padding: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+.footer__logo {
+    width: 103px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+.footer__item {
+    margin-bottom: 19px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__item {
+        margin-bottom: 29px;
+    }
+}
+
+.footer__link {
+    font-family: 'DM Mono';
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-white-color);
+}
+
