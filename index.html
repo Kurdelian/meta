@@ -60,7 +60,10 @@
             <div>
             <h1 class="hero__title">META RECORD LABEl</h1>
             <p class="hero__tex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-            <button type="button" class="hero__button">Learn more</button>
+            <div id="div1">
+                <p class="hero__tex hero__tex_block">Eligible purchases can be automatically added to the Family Library, or you can add them yourself after you buy them. Apps & games, Movies & TV shows, and Books sharing with Family Library may be limited in some countries. When you remove purchases from Family Library or leave your family group, your family members lose access to the purchases you added to Family Library.</p>
+            </div>
+            <button type="button" class="hero__button" value="Click" onmousedown="viewDiv()">Learn more</button>
         </div>
             <picture class="hero__img_box">
                 <source srcset="./image/plays.jpg 1x, ./images/plays-2x.jpg 2x" media="(min-width: 1500px)" />
@@ -87,7 +90,7 @@
             cras sed felis. Aenean vel elit scelerisque mauris pellentesque pulvinar. Et malesuada fames ac turpis egestas sed
             tempus. Enim sit amet venenatis urna cursus eget.</p>
             <p class="collection__tex_description">Maecenas ultricies mi eget mauris pharetra et ultrices. A condimentum vitae sapien pellentesque habitant morbi.</p>
-            <button type="button" class="collection__button">Get one on OpenSea</button>
+            <button data-modal-open type="button" class="collection__button">Get one on OpenSea</button>
         </div>
         </div>
     </section>
@@ -375,7 +378,7 @@
             <ul class="team__list_basic">
                 <li class="team__item_basic">
                     <picture>
-                        <source srcset="./image/shakylake 1x, ./images/shakylake-2x.jpg 2x" media="(min-width: 1500px)" />
+                        <source srcset="./image/shakylake 1x, ./images/shakylake-2x.jpg 2x" media="(min-width: 1600px)" />
                         <img src="./image/shakylake.jpg" alt="shakylake" class="team__img">
                     </picture>
                     <div>
@@ -398,7 +401,7 @@
                 </li>
                 <li class="team__item_basic">
                     <picture>
-                        <source srcset="./image/bakyhike 1x, ./images/bakyhike-2x.jpg 2x" media="(min-width: 1500px)" />
+                        <source srcset="./image/bakyhike 1x, ./images/bakyhike-2x.jpg 2x" media="(min-width: 1600px)" />
                         <img src="./image/bakyhike.jpg" alt="bakyhike" class="team__img">
                     </picture>
                     <div>
@@ -421,7 +424,7 @@
                 </li>
                 <li class="team__item_basic">
                     <picture>
-                        <source srcset="./image/vaniado 1x, ./images/vaniado-2x.jpg 2x" media="(min-width: 1500px)" />
+                        <source srcset="./image/vaniado 1x, ./images/vaniado-2x.jpg 2x" media="(min-width: 1600px)" />
                         <img src="./image/vaniado.jpg" alt="vaniado" class="team__img">
                     </picture>
                     <div>
@@ -461,20 +464,26 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
         <picture >
             <source srcset="./image/logo.png 1x, ./image/ogo.png 2x" media="(min-width: 1500px)" />
             <img src="./image/logo.png" alt="logo" class="footer__logo">
         </picture>
-        <ul>
+        <ul class="footer__list">
+            <div>
             <li class="footer__item"><a href="#" class="footer__link ">Wave NFTs</a></li>
             <li class="footer__item"><a href="#" class="footer__link ">Stories</a></li>
             <li class="footer__item"><a href="#" class="footer__link ">Contact</a></li>
+        </div>
+        <div>
             <li class="footer__item"><a href="#" class="footer__link ">Licencing</a></li>
             <li class="footer__item"><a href="#" class="footer__link ">Style Guide</a></li>
             <li class="footer__item"><a href="#" class="footer__link ">Changelog</a></li>
+        </div>
+        <div>
             <li class="footer__item"><a href="#" class="footer__link ">Powered by Webflow</a></li>
-            <li class="footer__item"><a href="#" class="footer__link ">Developed by Anastasiia G.</a></li>
+            <li class="footer__item footer__item_bottom"><a href="#" class="footer__link ">Developed by Anastasiia G.</a></li>
+        </div>
         </ul>
         <ul class="social__nav">
             <li class="nav__item_icon"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./image/tvitter.svg" alt="tvitter"></a></li>
@@ -484,11 +493,28 @@
         </ul>
     </div>
 </footer>
+<div class="backdrop is-hidden" data-modal> 
+    <div class="modal">
+            <h5 class="modal__title">New message to @meta</h5>
+            <form class="form">
+                <label for="recipient-name" class="modal__tex">Recipient:</label>
+                <input type="text" id="recipient-name" class="modal__input">
+                <label for="message-text" class="modal__tex">Message:</label>
+                <textarea id="message-text" class="modal__input modal__textarea"></textarea>
+            <div class="modal__button_box">
+                <button data-modal-close type="button" class="hero__button form__button">Close</button>
+                <button type="button" class="hero__button form__button" onclick="location.reload(); return false;">Send message</button>
+            </div>
+        </form>
+        </div>
+</div>
 
 
 
 
+<script src="block.js"></script>
 <script src="accordeon.js"></script>
 <script src="story.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>
