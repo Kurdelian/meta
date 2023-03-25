@@ -848,6 +848,12 @@ nav ul a:hover {
     }
 }
 
+@media screen and (min-width: 1800px) {
+    .roadmap {
+        padding-top: 300px;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .roadmap {
         padding-bottom: 288px;
@@ -1683,3 +1689,61 @@ nav ul a:hover {
     }
 }
 
+.wavenfts__title {
+    text-align: center;
+}
+
+.wavenfts__title_part {
+    color: var(--accent-color);
+}
+
+.wavenfts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.wavenfts__list:last-child {
+    margin-bottom: 0px;
+}
+
+.wavenfts__img {
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    .wavenfts__img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.wavenfts__tex {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    text-transform: uppercase;
+    color: #A8A8A8;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .wavenfts__tex {
+        font-size: 24px;
+    } 
+}
+
+.wavenfts__tex_description {
+    font-size: 15px;
+    line-height: 2.27;
+    color: var(--primary-white-color);
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .wavenfts__tex_description {
+        font-size: 20px;
+    }
+}
